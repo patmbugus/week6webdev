@@ -1,1 +1,58 @@
- 
+ body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: #f9f9f9;
+}
+h1 {
+    color: #2a6ebb;
+}
+button {
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background: #2a6ebb;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #174a7c;
+}
+#hoverBox {
+    transition: background 0.3s;
+    outline: none;
+}
+.tabs {
+    margin: 10px 0;
+}
+.tabBtn {
+    background: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+}
+.tabBtn:focus {
+    outline: 2px solid #2a6ebb;
+}
+.tabContent {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: #fff;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 8px;
+}
+input:invalid {
+    border-color: red;
+}
+input:valid {
+    border-color: green;
+}

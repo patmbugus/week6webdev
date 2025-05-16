@@ -1,1 +1,64 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Handling Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Event Handling & Interactive Elements</h1>
+
+    <!-- 1. Event Handling -->
+    <section>
+        <h2>Event Handling</h2>
+        <button id="colorBtn">Click Me!</button>
+        <button id="secretBtn">Secret Action</button>
+        <div id="hoverBox" tabindex="0" style="width:100px;height:100px;background:#eee;margin:10px 0;">Hover or Focus Me</div>
+        <p id="keypressOutput">Press any key...</p>
+    </section>
+
+    <!-- 2. Interactive Elements -->
+    <section>
+        <h2>Image Gallery</h2>
+        <div id="gallery">
+            <img id="galleryImg" src="https://plus.unsplash.com/premium_photo-1678567671496-aa666d40af88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery" width="200">
+            <br>
+            <button id="prevImg">Previous</button>
+            <button id="nextImg">Next</button>
+        </div>
+
+        <h2>Tabs</h2>
+        <div class="tabs">
+            <button class="tabBtn" data-tab="1">Tab 1</button>
+            <button class="tabBtn" data-tab="2">Tab 2</button>
+            <button class="tabBtn" data-tab="3">Tab 3</button>
+        </div>
+        <div class="tabContent" id="tab1">Content for Tab 1</div>
+        <div class="tabContent" id="tab2" style="display:none;">Content for Tab 2</div>
+        <div class="tabContent" id="tab3" style="display:none;">Content for Tab 3</div>
+    </section>
+
+    <!-- 3. Form Validation -->
+    <section>
+        <h2>Sign Up Form</h2>
+        <form id="signupForm" novalidate>
+            <label>
+                Email:
+                <input type="email" id="email" required>
+                <span class="error" id="emailError"></span>
+            </label>
+            <br>
+            <label>
+                Password:
+                <input type="password" id="password" required minlength="8">
+                <span class="error" id="passwordError"></span>
+            </label>
+            <br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
